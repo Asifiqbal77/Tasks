@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 4 - Red Card 2018</title>
+
+  <link rel="shortcut icon" href="./images/icon_awards.png" type="image/x-icon" />
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: white;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    
+    .page{
+      width: 380px;
+      min-height: 100vh;
+      background: white;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #eee;
+    }
+
+    
+    .header{
+      background: maroon;
+      color: white;
+      padding: 22px 22px 18px 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    
+    .header::after{
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      width: 0;
+      height: 0;
+      border-bottom: 70px solid #fff;
+      border-left: 70px solid transparent;
+    }
+
+    .logo-circle{
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    .logo-circle img{
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .title{
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    .subtitle{
+      font-size: 13px;
+      font-weight: 700;
+      opacity: 0.95;
+      margin-bottom: 12px;
+    }
+
+    .desc{
+      font-size: 11px;
+      line-height: 16px;
+      opacity: 0.88;
+      max-width: 310px;
+    }
+
+    
+    .content{
+      padding: 18px 22px 0 22px;
+    }
+
+    .section{
+      margin-bottom: 22px;
+    }
+
+    .section-head{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+   
+    .corner-triangle{
+      width: 18px;
+      height: 18px;
+      background: maroon;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+
+    .section-title{
+      font-size: 18px;
+      font-weight: 900;
+      color: #111;
+      letter-spacing: 0.5px;
+    }
+
+    .clubs{
+      display: flex;
+      gap: 18px;
+      flex-wrap: nowrap;   
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .club{
+      width: 60px;                
+      text-align: center;
+      flex: 0 0 auto;
+    }
+
+    .club img{
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      margin-bottom: 6px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .club p{
+      font-size: 9px;
+      line-height: 11px;
+      color: maroon;
+      font-weight: 700;
+    }
+
+    .club span{
+      display: block;            
+      font-size: 8px;
+      color: black;
+      font-weight: 600;
+      margin-left: 4px;
+    }
+
+    .footer {
+  background: maroon;
+  color: white;
+  padding: 22px;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  position: relative;
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;   
+  width: 0;
+  height: 0;
+  border-bottom: 70px solid white; 
+  border-left: 70px solid transparent; 
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    
+    <header class="header">
+
+      <div class="logo-circle">
+        <img src="./images/logo.png" alt="Logo">
+      </div>
+
+      <div class="title">RED CARD 2018</div>
+      <div class="subtitle">China Digital Football Awards</div>
+
+      <p class="desc">
+        The Red Card is globally recognised as the leading annual report to assess the most influential
+        European football clubs, leagues and players online in China. Now in its 7th year, Red Card 2018
+        has been expanded to include 5 additional awards to recognise the many areas of digital performance
+        in China. The awards report is based on the evaluation of the football clubs, leagues and players
+        for their performance on Chinese digital platforms, such as Weibo and WeChat.
+        <br><br>
+        This report aims to educate teams and organisations on how to improve their China digital strategy,
+        what today’s Chinese fans want and what works online in China.
+      </p>
+
+    </header>
+
+  
+    <main class="content">
+
+      
+      <section class="section">
+        <div class="section-head">
+          <img src="./images/icon_awards.png" alt="icon">
+          <div class="section-title">BEST CLUBS</div>
+        </div>
+
+        <div class="clubs">
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <img src="./images/icon_awards.png" alt="icon">
+          <div class="section-title">BEST CLUBS</div>
+        </div>
+
+        <div class="clubs">
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <img src="./images/icon_awards.png" alt="icon">
+          <div class="section-title">BEST CLUBS</div>
+        </div>
+
+        <div class="clubs">
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <img src="./images/icon_awards.png" alt="icon">
+          <div class="section-title">BEST CLUBS</div>
+        </div>
+
+        <div class="clubs">
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <img src="./images/icon_awards.png" alt="icon">
+          <div class="section-title">BEST CLUBS</div>
+        </div>
+
+        <div class="clubs">
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+          <div class="club"><img src="./images/BVB.png" alt="BVB"><p>Lorem ipsum <span>Lorem</span></p></div>
+
+                
+
+        </div>
+      </section>
+
+    </main>
+
+   
+    <footer class="footer">
+      RED CARD 2019 WINNERS <br />
+      AND REPORT TO BE LAUNCHED <br />
+      ON 24TH JANUARY 2019.
+    </footer>
+
+  </div>
+
+</body>
+</html>
